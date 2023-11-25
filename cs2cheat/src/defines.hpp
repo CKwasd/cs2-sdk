@@ -53,7 +53,7 @@
 #define GET_GC_CLIENT_SYSTEM CS2_SDK_SIG("E8 ? ? ? ? 48 8B 4F 10 8B 1D ? ? ? ?")
 #define CREATE_BASE_TYPE_CACHE CS2_SDK_SIG("E8 ? ? ? ? 33 C9 8B D1")
 #define FIND_SO_CACHE CS2_SDK_SIG("E8 ? ? ? ? 48 8B F0 48 85 C0 74 0E 4C 8B C3")
-#define GET_LOCAL_PLAYER_CONTROLLER CS2_SDK_SIG("E8 ? ? ? ? 49 89 47 08")
+#define GET_LOCAL_PLAYER_CONTROLLER CS2_SDK_SIG("E8 ? ? ? ? 41 83 BF ? ? ? ? ?")
 #define SET_DYNAMIC_ATTRIBUTE_VALUE_UINT                                       \
     CS2_SDK_SIG(                                                               \
         "E9 ? ? ? ? CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC 49 8B C0 48 " \
@@ -67,8 +67,7 @@
     CS2_SDK_SIG("48 89 5C 24 ? 56 57 41 54 48 83 EC 30 48 8B F2")
 #define ADD_STATTRAK_ENTITY CS2_SDK_SIG("40 55 41 55 48 8D 6C 24 ?")
 #define ADD_NAMETAG_ENTITY \
-    CS2_SDK_SIG(           \
-        "E8 ? ? ? ? 48 8B CB E8 ? ? ? ? 48 8B C8 E8 ? ? ? ? 88 83 ? ? ? ?")
+    CS2_SDK_SIG("E8 ? ? ? ? 48 8B CF E8 ? ? ? ? 48 8B C8 E8 ? ? ? ?")
 #define IS_PAINT_KIT_USING_LEGACY_MODEL \
     CS2_SDK_SIG("48 8B C4 48 89 70 20 55 48 8D 68 A1")
 
